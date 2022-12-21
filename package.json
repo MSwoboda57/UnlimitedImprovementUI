@@ -1,15 +1,22 @@
 {
-  "name": "react-template-2021",
+  "name": "UnlimitedImprovement",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@popperjs/core": "^2.9.3",
-    "bootstrap": "^5.1.0",
+    "axios": "^1.2.0",
+    "bootstrap": "^5.2.3",
+    "date-fns": "^2.29.3",
     "firebase": "^8.2.0",
+    "font-awesome": "^4.7.0",
     "react": "^17.0.2",
-    "react-bootstrap": "^2.5.0",
+    "react-app-polyfill": "^3.0.0",
+    "react-big-calendar": "^1.5.2",
+    "react-bootstrap": "^2.6.0",
+    "react-datepicker": "^4.8.0",
     "react-dom": "^17.0.2",
-    "react-router-dom": "^5.3.0",
+    "react-icons": "^4.7.1",
+    "react-router-dom": "^5.3.4",
     "react-scripts": "4.0.3",
     "web-vitals": "^1.0.1"
   },
@@ -18,17 +25,6 @@
     "build": "GENERATE_SOURCEMAP=false react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
-  },
-  "lint-staged": {
-    "*.{js,jsx}": [
-      "prettier --write",
-      "eslint --fix"
-    ]
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app"
-    ]
   },
   "browserslist": {
     "production": [
@@ -43,16 +39,7 @@
     ]
   },
   "devDependencies": {
-    "eslint": "^7.32.0",
-    "eslint-config-airbnb": "^18.2.1",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-import": "^2.24.2",
-    "eslint-plugin-jsx-a11y": "^6.4.1",
-    "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-react": "^7.26.0",
-    "eslint-plugin-react-hooks": "^4.2.0",
     "husky": "^7.0.2",
-    "lint-staged": "^11.1.2",
     "prettier": "^2.4.1"
   }
 }

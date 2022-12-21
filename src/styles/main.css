@@ -1,3 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
 body {
   background-color: lightblue !important;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+.home, .exercise, .learning, .meditation, .newIdea, .nutrition, .vice {
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+}
+.day-and-workout{
+  white-space: break-spaces;
+  flex-direction: row;
+  display: flex;
+
+
+}
+.workouts-week-display{
+  flex-direction: row;
+  width: fit-content;
+
+
+
+}
+.workouts-day-display{
+  flex-direction: row;
+  width: 200px;
+  
+
+}
+
+.title{
+  
+
+  background-color: rgb(37, 198, 39);
+ 
+
+
+}
+.dayData{
+  background-color: azure;
+
+}
+
+.typeContainer{
+  white-space: break-spaces;
+  flex-direction: column;
+  display: flex;
+  background-color: aliceblue;
+  width: fit-content;
+}
+.learningItems{
+  white-space: break-spaces;
+  flex-direction: column;
+  display: flex;
+  width: fit-content;
+}
+.learning-container{
+  white-space: break-spaces;
+  flex-direction: row;
+  display: flex;
+  background-color: aliceblue;
+  justify-content: space-around;
+
+}
+
+.med-log{
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  background-color: azure;
+  
+}
+
+.ideah1{
+  justify-content: left;
+  display: inline-flex;
+}
+
+.idea-div{
+  padding-bottom: 25px;
 }

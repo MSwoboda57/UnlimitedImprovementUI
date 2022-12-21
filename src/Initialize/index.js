@@ -3,6 +3,7 @@ import Loading from '../components/Loading';
 import LogIn from '../pages/LogIn';
 import Routes from '../routes';
 import { useAuth } from '../utils/context/authContext';
+import { Navbar} from '../components/Navbar';
 
 function Initialize() {
   const { user, userLoading } = useAuth();
@@ -12,7 +13,19 @@ function Initialize() {
     return <Loading />;
   }
 
-  return <>{user ? <Routes user={user} /> : <LogIn />}</>;
+  return (
+    <div className="Index">
+      {user ? (
+        <>
+          <Navbar user={user}/>
+          <Routes user={user} />
+        </>
+      ) : (
+        <LogIn />
+      )}
+
+    </div>
+);
 }
 
 export default Initialize;
